@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+@layer components{
+    .svg{
+        @apply w-4 mx-2
+    }
+    .list{
+        @apply mb-3 flex justify-center sm:justify-end  hover:bg-slate-300 hover:text-white transition ease-in duration-75 py-1
+    }
+}
