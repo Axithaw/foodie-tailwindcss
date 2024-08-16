@@ -5,9 +5,18 @@
 
 @layer components{
     .svg{
-        @apply w-4 mx-2
+        @apply w-6 mx-2
     }
     .list{
-        @apply mb-3 flex justify-center sm:justify-end  hover:bg-slate-300 hover:text-white transition ease-in duration-75 py-1
+        @apply  sm:mb-3 flex justify-center sm:justify-end  hover:bg-slate-300 hover:text-white transition ease-in duration-75 py-1
+    }
+    .btn{
+        @apply font-bold text-red-500 px-2  py-1 rounded-full border-red-500 border-2 hover:bg-red-500 hover:text-white
+    }
+    .card{
+        @apply rounded-xl overflow-hidden bg-slate-400  mb-5 relative
+    }
+    .tag{
+        @apply text-xl text-teal-950 font-semibold p-2 flex flex-col
     }
 }

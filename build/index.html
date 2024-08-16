@@ -6,10 +6,12 @@
     <title>Foodie-tailwind</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="grid sm:grid-cols-4 w-screen p-2 ">
-    <div class="col-span-1 ">
-        <nav class="bg-gray-100 sm:min-h-screen ">
-            <div class=" text-center font-bold flex justify-between sm:block py-3 ">
+<body class=" block sm:grid grid-cols-4  gap-x-2 p-2 ">
+    <div class="col-span-1 rounded-xl overflow-hidden">
+
+        <!-- Responsive navbar start-->
+        <nav class="bg-gray-100 sm:min-h-screen  ">
+            <div class=" bg-red-100 shadow-md text-blue-400 text-center font-bold flex justify-between sm:block py-3 mb-1">
                 <h2 class="font-Matemasie ml-2 text-xl">Foodie Foodie</h2>
                 <button class="menu block sm:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="svg ">
@@ -19,8 +21,8 @@
                   
             </div>
             <div class="hidden toggle sm:block justify-center ">
-                <ul class="text-slate-900">
-                    <li class="list sm:border-r-2 border-red-600 ">
+                <ul class=" w-full text-lg text-slate-900">
+                    <li class="list sm:border-r-4 border-red-600 ">
                         <a href="" class="flex ">
                            <span>Home</span>
                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="svg">
@@ -54,7 +56,107 @@
                 </ul>
             </div>
         </nav>
+        <!-- Responsive navbar end-->
+
+
+
     </div>
+    <div class="col-span-3 rounded-xl  bg-gray-200 min-h-screen mt-2 sm:mt-0 p-3" >
+        <div>
+            <header class="" >
+                <!-- <form action="" class="flex p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 mr-1 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+                    <input type="text" class="outline-offset-0 focus:bg-gray-400 w-100% focus:text-white" placeholder="search">
+                </form> -->
+
+                <div class="flex justify-end">
+                    <button class="btn mr-2">Log in</button>
+                    <button class="btn">Sign in</button>
+                </div>
+            </header>
+            <div class="">
+                <div class="mb-5">
+                    <h1 class="text-4xl font-bold text-yellow-500">READY TO SERVE!</h1>
+                </div>
+
+                <div class="flex flex-col items-center"> 
+                    <div class=" sm:grid grid-cols-3 lg:grid-cols-4 gap-x-6 sm:p-0 p-10 w-4/5 ">
+                        <div class=" card">
+                            <div class=" flex bg-transparent border-4 absolute rounded-xl p-1 text-white font-semibold top-2 right-2 hover:text-gray-900 hover:bg-white">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  <span>20 min</span>
+                                  
+                            </div>
+                            <img src="https://i.pinimg.com/564x/22/29/0d/22290dcfd246cc18d795fe19750e6e68.jpg" class="w-full sm:h-4/6 h-2/3" alt="">
+                            <div class="tag">
+                                <span>Burger king</span>
+                                <span>16,000 K</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class=" flex bg-transparent border-4 absolute rounded-xl p-1 text-white font-semibold top-2 right-2 hover:text-gray-900 hover:bg-white">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  <span>20 min</span>
+                                  
+                            </div>
+                            <img src="https://i.pinimg.com/564x/22/29/0d/22290dcfd246cc18d795fe19750e6e68.jpg" class=" h-4/6" alt="">
+                            <div class="tag">
+                                <span>Burger king</span>
+                                <span>16,000 K</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class=" flex bg-transparent border-4 absolute rounded-xl p-1 text-white font-semibold top-2 right-2 hover:text-gray-900 hover:bg-white">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  <span>20 min</span>
+                                  
+                            </div>
+                            <img src="https://i.pinimg.com/564x/22/29/0d/22290dcfd246cc18d795fe19750e6e68.jpg" class="w-full h-4/6" alt="">
+                            <div class="tag">
+                                <span>Burger king</span>
+                                <span>16,000 K</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class=" flex bg-transparent border-4 absolute rounded-xl p-1 text-white font-semibold top-2 right-2 hover:text-gray-900 hover:bg-white">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  <span>20 min</span>
+                                  
+                            </div>
+                            <img src="https://i.pinimg.com/564x/22/29/0d/22290dcfd246cc18d795fe19750e6e68.jpg" class="w-full h-4/6" alt="">
+                            <div class="tag">
+                                <span>Burger king</span>
+                                <span>16,000 K</span>
+                            </div>
+                        </div>
+                        <div class="card flex items-center  justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 text-cyan-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 <script>
     const menu = document.querySelector('.menu')
